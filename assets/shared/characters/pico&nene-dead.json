@@ -1,0 +1,62 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				793,
+				291
+			],
+			"loop": false,
+			"fps": 14,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "DEATH PICO"
+		},
+		{
+			"offsets": [
+				777,
+				295
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "DEATH LOOP"
+		},
+		{
+			"offsets": [
+				874,
+				277
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "Retry Text Confirm"
+		}
+	],
+	"taunts": [
+		"hey",
+		"hey",
+		"hey",
+		"hey"
+	],
+	"no_antialiasing": false,
+	"image": "characters/Pico&Nene_Death",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "pico",
+	"flip_x": true,
+	"healthbar_colors": [
+		183,
+		216,
+		85
+	],
+	"camera_position": [
+		1000,
+		-500
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

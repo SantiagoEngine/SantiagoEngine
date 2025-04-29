@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				23,
+				-43
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Pico Uppercut0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				8,
+				-227
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Pico Before Uppercut00",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-50,
+				-88
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Pico Hit Low000",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-56,
+				-92
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Pico Laughing00",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-19,
+				-90
+			],
+			"anim": "singLEFT",
+			"fps": 18,
+			"name": "Pico Spin000",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Pico_Blazin",
+	"position": [
+		-90,
+		190
+	],
+	"healthicon": "pico",
+	"flip_x": true,
+	"healthbar_colors": [
+		183,
+		216,
+		85
+	],
+	"camera_position": [
+		-20,
+		170
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}
