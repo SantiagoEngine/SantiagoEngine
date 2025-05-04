@@ -31,6 +31,7 @@ jobs:
         run: |
           haxelib setup C:/haxelib
           haxelib install hxcpp > /dev/null --quiet
+          haxelib install flxgif > /dev/null
           .\"setup/Setup/setup-windows.bat"
         shell: cmd
       - name: Skip SScript setup mode
@@ -61,6 +62,7 @@ jobs:
         run: |
           haxelib setup C:/haxelib
           haxelib install hxcpp > /dev/null --quiet
+          haxelib install flxgif > /dev/null
           .\"setup/Setup/setup-windows.bat"
         shell: cmd
       - name: Skip SScript setup mode
