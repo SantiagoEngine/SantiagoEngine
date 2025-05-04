@@ -34,6 +34,9 @@ jobs:
           haxelib install flxgif > /dev/null
           .\"setup/Setup/setup-windows.bat"
         shell: cmd
+      - name: Install flxgif library
+        run: haxelib install flxgif
+
       - name: Skip SScript setup mode
         run: echo 'oy9:showMacroty8:loopCosti25y10:includeAllfg' >> %USERPROFILE%/settings.cocoa
         shell: cmd
@@ -65,6 +68,9 @@ jobs:
           haxelib install flxgif > /dev/null
           .\"setup/Setup/setup-windows.bat"
         shell: cmd
+      - name: Install flxgif library
+        run: haxelib install flxgif
+
       - name: Skip SScript setup mode
         run: echo 'oy9:showMacroty8:loopCosti25y10:includeAllfg' >> %USERPROFILE%/settings.cocoa
         shell: cmd
