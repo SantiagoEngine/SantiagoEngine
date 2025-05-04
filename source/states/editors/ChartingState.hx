@@ -233,18 +233,32 @@ class ChartingState extends MusicBeatState
 		bg.color = 0xFF222222;
 		add(bg);
 
-		// SantiagoEngine bois
-		lilStage = new FlxSprite(32, 432).loadGraphic(Paths.image("chartEditor/lilStage"));
+
+		/* I always forget this shit
+
+		Notedata.x shit works like this:
+			0 - left
+			1 - down
+			2 - up
+			3 - right
+
+		meh
+
+		SantiagoEngine bois
+
+		
+		lilStage = new FlxSprite(32, 460).loadGraphic(Paths.image("chartEditor/lilStage"));
 		lilStage.scrollFactor.set();
 		add(lilStage);
+		*/
 
-		lilBf = new FlxSprite(32, 432).loadGraphic(Paths.image("chartEditor/lilBf"), true, 300, 256);
-		lilBf.animation.add("idle", [0, 1], 12, true);
-		lilBf.animation.add("0", [3, 4, 5], 12, false);
-		lilBf.animation.add("1", [6, 7, 8], 12, false);
-		lilBf.animation.add("2", [9, 10, 11], 12, false);
-		lilBf.animation.add("3", [12, 13, 14], 12, false);
-		lilBf.animation.add("yeah", [17, 20, 23], 12, false);
+		lilBf = new FlxSprite(22, 450).loadGraphic(Paths.image("chartEditor/santiagobud"), true, 300, 300);
+		lilBf.frames = Paths.getSparrowAtlas('chartEditor/santiagobud');
+		lilBf.animation.addByPrefix('idle', 'IDLE', 24, true);
+		lilBf.animation.addByPrefix('0', 'LEFT', 24, true);
+		lilBf.animation.addByPrefix('1', 'DOWN', 24, true);
+		lilBf.animation.addByPrefix('2', 'UP', 24, true);
+		lilBf.animation.addByPrefix('3', 'RIGHT', 24, true);
 		lilBf.animation.play("idle");
 		lilBf.animation.finishCallback = function(name:String){
 			lilBf.animation.play(name, true, false, lilBf.animation.getByName(name).numFrames - 2);
@@ -252,12 +266,15 @@ class ChartingState extends MusicBeatState
 		lilBf.scrollFactor.set();
 		add(lilBf);
 
-		lilOpp = new FlxSprite(32, 432).loadGraphic(Paths.image("chartEditor/lilOpp"), true, 300, 256);
-		lilOpp.animation.add("idle", [0, 1], 12, true);
-		lilOpp.animation.add("0", [3, 4, 5], 12, false);
-		lilOpp.animation.add("1", [6, 7, 8], 12, false);
-		lilOpp.animation.add("2", [9, 10, 11], 12, false);
-		lilOpp.animation.add("3", [12, 13, 14], 12, false);
+
+		// SHE IS MY BUDDIE MY PAL' :33
+		lilOpp = new FlxSprite(150, 450).loadGraphic(Paths.image("chartEditor/jrwbud"), true, 300, 300);
+		lilOpp.frames = Paths.getSparrowAtlas('chartEditor/jrwbud');
+		lilOpp.animation.addByPrefix('idle', 'IDLE', 24, true);
+		lilOpp.animation.addByPrefix('0', 'LEFT', 24, true);
+		lilOpp.animation.addByPrefix('1', 'DOWN', 24, true);
+		lilOpp.animation.addByPrefix('2', 'UP', 24, true);
+		lilOpp.animation.addByPrefix('3', 'RIGHT', 24, true);
 		lilOpp.animation.play("idle");
 		lilOpp.animation.finishCallback = function(name:String){
 			lilOpp.animation.play(name, true, false, lilOpp.animation.getByName(name).numFrames - 2);
@@ -497,14 +514,14 @@ class ChartingState extends MusicBeatState
 
 		var clear_events:FlxButton = new FlxButton(320, 310, 'Clear events', function()
 			{
-				openSubState(new Prompt('This action will clear current progress.\n\nProceed?', 0, clearEvents, null,ignoreWarnings));
+				openSubState(new Prompt('THIS ACTION WILL ERASE ALL UNSAVED DATA!!!\n\nProceed?', 0, clearEvents, null,ignoreWarnings));
 			});
 		clear_events.color = FlxColor.RED;
 		clear_events.label.color = FlxColor.WHITE;
 
 		var clear_notes:FlxButton = new FlxButton(320, clear_events.y + 30, 'Clear notes', function()
 			{
-				openSubState(new Prompt('This action will clear current progress.\n\nProceed?', 0, function(){for (sec in 0..._song.notes.length) {
+				openSubState(new Prompt('THIS ACTION WILL ERASE ALL UNSAVED DATA!!!.\n\nProceed?', 0, function(){for (sec in 0..._song.notes.length) {
 					_song.notes[sec].sectionNotes = [];
 				}
 				updateGrid();

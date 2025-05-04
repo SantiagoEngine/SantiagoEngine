@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="santiagobud.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="DOWN0001" x="572" y="0" width="115" height="205" frameX="-13" frameY="-52" frameWidth="128" frameHeight="256"/>
+	<SubTexture name="DOWN0002" x="456" y="0" width="116" height="207" frameX="-13" frameY="-51" frameWidth="128" frameHeight="256"/>
+	<SubTexture name="IDLE0001" x="114" y="229" width="114" height="217" frameX="-8" frameY="-42" frameWidth="128" frameHeight="256"/>
+	<SubTexture name="IDLE0002" x="0" y="229" width="114" height="217" frameX="-8" frameY="-41" frameWidth="128" frameHeight="256"/>
+	<SubTexture name="LEFT0001" x="456" y="207" width="113" height="209" frameX="1" frameY="-46" frameWidth="128" frameHeight="256"/>
+	<SubTexture name="LEFT0002" x="228" y="229" width="115" height="213" frameX="1" frameY="-43" frameWidth="128" frameHeight="256"/>
+	<SubTexture name="RIGHT0001" x="113" y="0" width="114" height="225" frameX="-15" frameY="-34" frameWidth="128" frameHeight="256"/>
+	<SubTexture name="RIGHT0002" x="0" y="0" width="113" height="229" frameX="-14" frameY="-30" frameWidth="128" frameHeight="256"/>
+	<SubTexture name="UP0001" x="343" y="0" width="113" height="219" frameX="-8" frameY="-39" frameWidth="128" frameHeight="256"/>
+	<SubTexture name="UP0002" x="227" y="0" width="116" height="217" frameX="-6" frameY="-41" frameWidth="128" frameHeight="256"/>
+</TextureAtlas>
