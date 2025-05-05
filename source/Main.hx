@@ -68,9 +68,6 @@ class Main extends Sprite
 		FlxTransitionableState.skipNextTransIn = true;
 		FlxTransitionableState.skipNextTransOut = true;
 
-		WindowColorMode.setWindowColorMode(ClientPrefs.data.windowDarkMode);
-		WindowColorMode.redrawWindowHeader();
-
 		// Credits to MAJigsaw77 (he's the og author for this code)
 		#if android
 		Sys.setCwd(Path.addTrailingSlash(Context.getExternalFilesDir()));
