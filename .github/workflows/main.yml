@@ -25,10 +25,10 @@ jobs:
           .\"setup/Setup/setup-windows.bat"
         shell: cmd
 
-      - name: Download and install SScript
+      - name: Clone SScript Archive and install SScript.zip
         run: |
-          curl -L -o SScript.zip "https://github.com/CCobaltDev/SScript-Archive/raw/main/archives/SScript-7%2C7%2C0.zip?raw=true"
-          haxelib install SScript.zip
+          git clone https://github.com/CCobaltDev/SScript-Archive.git
+          haxelib install SScript-Archive/archives/SScript-7,7,0.zip
         shell: cmd
 
       - name: Skip SScript setup mode
@@ -64,10 +64,10 @@ jobs:
           .\"setup/Setup/setup-windows.bat"
         shell: cmd
 
-      - name: Download and install SScript
+      - name: Clone SScript Archive and install SScript.zip
         run: |
-          curl -L -o SScript.zip "https://github.com/CCobaltDev/SScript-Archive/raw/main/archives/SScript-7%2C7%2C0.zip?raw=true"
-          haxelib install SScript.zip
+          git clone https://github.com/CCobaltDev/SScript-Archive.git
+          haxelib install SScript-Archive/archives/SScript-7,7,0.zip
         shell: cmd
 
       - name: Skip SScript setup mode
