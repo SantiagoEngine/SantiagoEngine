@@ -2280,12 +2280,12 @@ class ChartingState extends MusicBeatState
 
 						if(!note.mustPress)
 						{
-							lilOpp.animation.play("" + (data % 4), true);
+							lilBf.animation.play("" + (data % 4), true);
 						}
 						
 						if(note.mustPress)
 						{
-							lilBf.animation.play("" + (data % 4), true);
+							lilOpp.animation.play("" + (data % 4), true);
 						}
 
 						if(note.mustPress != _song.notes[curSec].mustHitSection)
