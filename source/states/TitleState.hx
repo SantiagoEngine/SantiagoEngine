@@ -22,6 +22,10 @@ import states.StoryMenuState;
 import states.OutdatedState;
 import states.MainMenuState;
 
+#if (cpp && windows)
+import hxwindowmode.WindowColorMode;
+#end
+
 typedef TitleData =
 {
 	titlex:Float,
@@ -91,6 +95,13 @@ class TitleState extends MusicBeatState
 		FlxG.save.bind('funkin', CoolUtil.getSavePath());
 
 		ClientPrefs.loadPrefs();
+
+		if (ClientPrefs.data.windowDarkMode)
+		{
+			WindowColorMode.setDarkMode();
+		} else {
+			// nothin'
+		}
 
 		#if CHECK_FOR_UPDATES
 		if(ClientPrefs.data.checkForUpdates && !closedState) {
