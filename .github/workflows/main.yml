@@ -27,7 +27,7 @@ jobs:
 
       - name: Download and install SScript
         run: |
-          curl -L -o SScript.zip https://github.com/CCobaltDev/SScript-Archive/raw/main/archives/SScript-7%2C7%2C0.zip
+          curl -L -o SScript.zip "https://github.com/CCobaltDev/SScript-Archive/raw/main/archives/SScript-7%2C7%2C0.zip?raw=true"
           haxelib install SScript.zip
         shell: cmd
 
@@ -66,7 +66,7 @@ jobs:
 
       - name: Download and install SScript
         run: |
-          curl -L -o SScript.zip https://github.com/CCobaltDev/SScript-Archive/raw/main/archives/SScript-7%2C7%2C0.zip
+          curl -L -o SScript.zip "https://github.com/CCobaltDev/SScript-Archive/raw/main/archives/SScript-7%2C7%2C0.zip?raw=true"
           haxelib install SScript.zip
         shell: cmd
 
