@@ -57,6 +57,12 @@ class MusicBeatState extends FlxUIState
 	public static var timePassedOnState:Float = 0;
 	override function update(elapsed:Float)
 	{
+		if (subState != null)
+		{
+			super.update(elapsed);
+			return;
+		}
+
 		//everyStep();
 		var oldStep:Int = curStep;
 		timePassedOnState += elapsed;
@@ -83,8 +89,6 @@ class MusicBeatState extends FlxUIState
 		stagesFunc(function(stage:BaseStage) {
 			stage.update(elapsed);
 		});
-
-		super.update(elapsed);
 	}
 
 	private function updateSection():Void
