@@ -3,10 +3,6 @@ package states;
 import flixel.addons.display.FlxBackdrop;
 import flixel.addons.transition.FlxTransitionableState;
 
-#if (cpp && windows)
-import hxwindowmode.WindowColorMode;
-#end
-
 class ClickHereState extends MusicBeatState
 {
 	var clickhere:FlxSprite;
