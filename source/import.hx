@@ -47,7 +47,6 @@ import flxanimate.*;
 import hxwindowmode.WindowColorMode;
 #end
 
-import flxgif.FlxGifSprite;
 import backend.DiamondFadeTransition;
 
 //Flixel
