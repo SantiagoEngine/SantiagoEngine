@@ -14,8 +14,6 @@ class ClickHereState extends MusicBeatState
 	override function create()
 	{
 		super.create();
-		
-		ClientPrefs.loadPrefs();
 
 		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		add(bg);
@@ -35,13 +33,6 @@ class ClickHereState extends MusicBeatState
 		if (FlxG.mouse.justPressed && FlxG.mouse.overlaps(clickhere))
 		{
 			MusicBeatState.switchState(new TitleState());
-		}
-
-		if (ClientPrefs.data.windowDarkMode)
-		{
-			WindowColorMode.setDarkMode();
-		} else {
-			// nothin'
 		}
 
 		if (FlxG.mouse.overlaps(clickhere))
