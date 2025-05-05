@@ -263,6 +263,12 @@ class ChartingState extends MusicBeatState
 		lilBf.animation.finishCallback = function(name:String){
 			lilBf.animation.play(name, true, false, lilBf.animation.getByName(name).numFrames - 2);
 		}
+
+		if (lilBf.animation.finished)
+		{ 
+			lilBf.animation.play("idle"); 
+		}
+		
 		lilBf.scrollFactor.set();
 		add(lilBf);
 
@@ -279,6 +285,12 @@ class ChartingState extends MusicBeatState
 		lilOpp.animation.finishCallback = function(name:String){
 			lilOpp.animation.play(name, true, false, lilOpp.animation.getByName(name).numFrames - 2);
 		}
+
+		if (lilOpp.animation.finished)
+		{ 
+			lilOpp.animation.play("idle"); 
+		}
+		
 		lilOpp.scrollFactor.set();
 		add(lilOpp);
 
